@@ -75,13 +75,13 @@ body {
     border-radius: 50px; /* Untuk membuat latar belakang berbentuk oval */
     text-decoration: none;
     color: white;
-    background: blue;
+    background: #073042;
     transition: background 0,5s, color 0,5s;
 }
 
 .button:hover {
-    background: #00FFCE; /* Warna hijau toska saat disentuh */
-    color: blue;
+    background: #6dd58c; /* Warna hijau toska saat disentuh */
+    color: #073042;
 }
 
 .perkenalan h1 {
@@ -160,15 +160,15 @@ body {
     padding: 10px 20px;
     background-color: transparent;
     border: 1px solid black;
-    color: black;
+    color: #073042;
     text-decoration: none;
     border-radius: 40px;
     transition: background-color 0.3s ease;
 }
 
 .tombol:hover {
-    background-color: #a9dfbf; 
-    color: black;
+    background-color: #cbe8e3; 
+    color: #073042;
 }
 
 /* bagian 333333 */
@@ -413,6 +413,7 @@ body {
   margin-left: 15px;
   margin-right: 15px;
   background-color: white;
+  color: #073042;
   position: relative;
 }
 
@@ -429,13 +430,145 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
+  color: #073042;
   transition: color 0.3s; /* Animasi perubahan warna teks saat hover */
 }
 
 .tempat- a:hover {
-  color: #ff0000; /* Warna teks saat hover (merah) */
+  color: #00cc99 ; /* Warna teks saat hover (merah) */
 }
 
 .tempat-:hover {
-  background-color: #00cc99; /* Warna latar belakang saat hover (hijau toska) */
+  background-color: #cbe8e3; /* Warna latar belakang saat hover (hijau toska) */
+}
+
+/* bagian 88888 */
+/* bagian 88888 */
+/* bagian 88888 */
+
+/* atas */
+/* atas */
+/* atas */
+
+/* CSS untuk footer dan kolom-kolomnya */
+/* CSS untuk footer dan kolom-kolomnya */
+footer {
+  background-color: #fff; /* Latar belakang putih */
+  padding: 20px 0 0 0 ;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 70px 0 70px;
+}
+
+.bagian1{
+  display: flex;
+}
+
+.column1 {
+  flex: 1;
+  text-align: left; /* Membuat teks menjadi rata kiri */
+  position: relative;
+  padding: 10px;
+  font-size: 16px;
+  text-decoration: none solid rgb(64, 64, 64);
+  border-bottom: 0.2px solid black;
+}
+
+.column1 h3 {
+  margin: 0;
+  position: relative;
+  padding-bottom: 20px;
+  height: 29px;
+  color: #073042;
+}
+
+.column1 h3::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 0.2px; /* Garis tipis di bawah judul */
+  background-color: #000; /* Warna garis */
+  bottom: 0;
+  left: 0;
+}
+
+.column1 a {
+  color: #073042; /* Warna teks awal (hitam) */
+  text-decoration: none;
+  transition: color 0.3s; /* Animasi perubahan warna teks saat hover */
+  display: block;
+  margin-bottom: 20px; /* Jarak antara tautan */
+}
+
+.column1 a:hover {
+  color: #00cc99; /* Warna teks saat hover (hijau pastel) */
+}
+
+
+/* bawah */
+/* bawah */
+/* bawah */
+
+/* CSS untuk footer dan kolom-kolomnya */
+/* ... (CSS sebelumnya) ... */
+
+.bagian2 {
+  display: flex;
+  height: 150px; 
+  width: 1103px;
+}
+
+.keterangan1{
+height: 93px;
+width: 863px;
+}
+
+.keterangan2{
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0; /* Margin atas dan bawah untuk bagian 2 */
+  margin-left: 20px;
+}
+.keterangan2 p{
+  font-size: 12px;
+}
+
+.keterangan3{
+  margin-left: ;
+  display: flex;
+}
+
+.keterangan3 a {
+  margin-right: 20px;
+  color: #073042; /* Warna teks awal (hitam) */
+  text-decoration: none;
+  transition: color 0.3s; /* Animasi perubahan warna teks saat hover */
+}
+
+.keterangan3 a:hover {
+  color: #00cc99; /* Warna teks saat hover (hijau toska) */
+}
+
+
+.language-dropdown {
+  margin-right: 20px; /* Jarak antara pilihan bahasa dan paragraf */
+}
+
+.bagian2 p {
+  margin: 0; /* Menghilangkan margin default untuk paragraf */
+  margin-top: 10px; /* Jarak antara dua paragraf */
+}
+
+.social-media {
+  align-items: center;
+  margin-top: 20px; /* Margin atas untuk bagian media sosial */
+}
+
+.social-icon {
+  margin-right: 10px; /* Jarak antara ikon media sosial */
+}
+
+.social-icon img{
+  height: 28px;
+  width: 28px;
 }
