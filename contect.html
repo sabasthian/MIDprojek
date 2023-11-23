@@ -7,6 +7,8 @@
   <title>contect</title>
   <link rel="icon" href="img.png" type="image/png">
 
+ 
+
 </head>
 
 <body>
@@ -21,66 +23,126 @@
     </nav>
 </header>
 
-<<div class="container">
+<div class="container">
   <h2>Contact Us</h2>
-  <form>
-      <label for="fullName">Full Name</label>
-      <input type="text" id="fullName" name="fullName" required>
 
-      <label for="email">E-mail</label>
-      <input type="email" id="email" name="email" required>
+  <form onsubmit="return validateForm()">
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName" name="fullName">
 
-      <label for="username">Username</label>
-      <input type="text" id="username" name="username" required>
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" >
 
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password" required>
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username">
 
-      <div class="radio-group">
-        <label>Gender</label>
-        <label class="radio-label">
-            <input type="radio" id="male" name="gender" value="male">
-            Male
-        </label>
-        <label class="radio-label">
-            <input type="radio" id="female" name="gender" value="female">
-            Female
-        </label>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" >
+
+    <div class="radio-group">
+      <label>Gender</label>
+      <label class="radio-label">
+        <input type="radio" id="male" name="gender" value="male">
+        Male
+      </label>
+      <label class="radio-label">
+        <input type="radio" id="female" name="gender" value="female">
+        Female
+      </label>
     </div>
 
-      <label for="religion">Religion</label>
-      <select id="religion" name="religion">
-          <option value="christian">Christian</option>
-          <option value="islam">Islam</option>
-          <option value="hindu">Hindu</option>
-          <option value="buddhist">Buddhist</option>
-          <option value="other">Other</option>
-      </select>
+    <label for="religion">Religion</label>
+    <select id="religion" name="religion">
+      <option value="christian">Christian</option>
+      <option value="islam">Islam</option>
+      <option value="hindu">Hindu</option>
+      <option value="buddhist">Buddhist</option>
+      <option value="other">Other</option>
+    </select>
 
-      <label for="address">Address</label>
-      <textarea id="address" name="address" required></textarea>
+    <label for="address">Address</label>
+    <textarea id="address" name="address" ></textarea>
 
-      <div class="checkbox-group">
-        <label>Hobbies</label>
-        <label class="checkbox-label">
-            <input type="checkbox" id="reading" name="hobbies" value="reading">
-            Reading
-        </label>
-        <label class="checkbox-label">
-            <input type="checkbox" id="sports" name="hobbies" value="sports">
-            Sports
-        </label>
-        <label class="checkbox-label">
-            <input type="checkbox" id="traveling" name="hobbies" value="traveling">
-            Traveling
-        </label>
+    <div class="checkbox-group">
+      <label>Hobbies</label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        Reading
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="sports" name="hobbies" value="sports">
+        Sports
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+        Traveling
+      </label>
     </div>
 
-      <input type="submit" value="Save">
+    <input type="submit" value="Save">
   </form>
 </div>
 
+<script>
+  function validateForm() {
+    var fullName = document.getElementById('fullName').value;
+    var email = document.getElementById('email').value;
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    var gender = document.querySelector('input[name="gender"]:checked');
+    var religion = document.getElementById('religion').value;
+    var address = document.getElementById('address').value;
+    var hobbies = document.querySelectorAll('input[name="hobbies"]:checked');
 
+    if (fullName === "") {
+      alert("Please fill in the Full Name field.");
+      return false;
+    }
+
+    if (email === "") {
+      alert("Please fill in the E-mail field.");
+      return false;
+    } else {
+      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email.match(emailPattern)) {
+        alert("Invalid email address");
+        return false;
+      }
+    }
+
+    if (username === "") {
+      alert("Please fill in the Username field.");
+      return false;
+    }
+
+    if (password === "") {
+      alert("Please fill in the Password field.");
+      return false;
+    }
+
+    if (!gender) {
+      alert("Please select a Gender.");
+      return false;
+    }
+
+    if (religion === "") {
+      alert("Please select a Religion.");
+      return false;
+    }
+
+    if (address === "") {
+      alert("Please fill in the Address field.");
+      return false;
+    }
+
+    if (hobbies.length === 0) {
+      alert("Please select at least one Hobby.");
+      return false;
+    }
+
+    return true; // Submit the form if all validations pass
+  }
+</script>
 
   
 <footer>
