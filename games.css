@@ -150,6 +150,10 @@ footer {
   
   /* CSS untuk footer dan kolom-kolomnya */
   /* ... (CSS sebelumnya) ... */
+  footer{
+    padding: 0;
+    margin:  0;
+  }
   
   .bagian2 {
     display: flex;
