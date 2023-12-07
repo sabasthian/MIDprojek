@@ -1,86 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="contect.css" />
-  <title>contect</title>
-  <link rel="icon" href="img.png" type="image/png">
-
- 
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contect</title>
+    <!-- CSS only -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+    crossorigin="anonymous"
+  />
+  <link rel="icon" href="images/projek.png" type="image/png">
+    <link rel="stylesheet" href="contect.css" />
 </head>
-
 <body>
-  <header class="navbar">
-    <img src="images/images.png" alt="Logo" class="logo">
-    <nav class="nav-links">
-        <a href="index.html">HOME</a>
-        <a href="biodata.html">BIODATA</a>
-        <a href="contect.html" style="color: green ;">CONTACT US</a>
-        <a href="games.html">GAMES</a>
-    <img src="images/icon1.png" alt="icon pencari" class="cari" > 
-    </nav>
-</header>
 
-<div class="container">
-  <h2>Contact Us</h2>
+  <!-- navbar -->
+  <!-- navbar -->
+  <!-- navbar -->
 
-  <form onsubmit="return validateForm()">
-    <label for="fullName">Full Name</label>
-    <input type="text" id="fullName" name="fullName">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container">
+      <!-- Site Logo Here -->
+      <a class="navbar-brand" href="#"><img src="images/zoom-android-new-3d-logo-wordmark.webp" alt=""></a>
 
-    <label for="email">E-mail</label>
-    <input type="email" id="email" name="email" >
+      <!-- Tautan Navbar -->
+      <div class="collapse navbar-collapse" id="navbarMobileToggle">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " style="font-weight:bold" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-weight:bold" href="biodata.html">BIODATA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-weight:bold" href="contect.html">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-weight:bold" href="games.html">GAMES</a>
+          </li>
+        </ul>
+      </div>
 
-    <label for="username">Username</label>
-    <input type="text" id="username" name="username">
+      <!-- Kaca Pembesar & Tombol Navbar Toggle -->
+      <div class="d-flex align-items-center">
+        <img src="images/kaca pembesar.svg" class="d-block d-lg-block" style="padding-right: 20px;"> <!-- Muncul di semua ukuran layar -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobileToggle" aria-controls="navbarMobileToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
 
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" >
-
-    <div class="radio-group">
-      <label>Gender</label>
-      <label class="radio-label">
-        <input type="radio" id="male" name="gender" value="male">
-        Male
-      </label>
-      <label class="radio-label">
-        <input type="radio" id="female" name="gender" value="female">
-        Female
-      </label>
+      <!-- Tombol "Beli Ponsel" -->
+      <div class=" ms-auto d-none d-lg-block"> <!-- Hanya muncul di layar besar -->
+        <button type="button" class="btn1 btn btn-dark btn-rounded rounded-pill" data-mdb-ripple-init data-mdb-ripple-color="white"><a>Beli ponsel</a></button>
+      </div>
     </div>
+  </nav>
 
-    <label for="religion">Religion</label>
-    <select id="religion" name="religion">
-      <option value="christian">Christian</option>
-      <option value="islam">Islam</option>
-      <option value="hindu">Hindu</option>
-      <option value="buddhist">Buddhist</option>
-      <option value="other">Other</option>
-    </select>
+  <!-- navbar -->
+  <!-- navbar -->
+  <!-- navbar -->
 
-    <label for="address">Address</label>
-    <textarea id="address" name="address" ></textarea>
+  <div class="container" style="padding-top: 100px; padding-bottom: 100px;">
+    <h2 style="font-size: 40px;">Contact Us</h2>
 
-    <div class="checkbox-group">
-      <label>Hobbies</label>
-      <label class="checkbox-label">
-        <input type="checkbox" id="reading" name="hobbies" value="reading">
-        Reading
-      </label>
-      <label class="checkbox-label">
-        <input type="checkbox" id="sports" name="hobbies" value="sports">
-        Sports
-      </label>
-      <label class="checkbox-label">
-        <input type="checkbox" id="traveling" name="hobbies" value="traveling">
-        Traveling
-      </label>
-    </div>
-
-    <input type="submit" value="Save">
-  </form>
+    <form onsubmit="return validateForm()">
+        <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" name="fullName">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password">
+        </div>
+        <div class="mb-3">
+          <label for="Gender" class="form-label">Gender :</label>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="male">Male</label>
+                <input class="form-check-input" type="radio" id="male" name="gender" value="male">
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="female">Female</label>
+                <input class="form-check-input" type="radio" id="female" name="gender" value="female">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="religion" class="form-label">Religion</label>
+            <select class="form-select" id="religion" name="religion">
+                <option value="christian">Christian</option>
+                <option value="islam">Islam</option>
+                <option value="hindu">Hindu</option>
+                <option value="buddhist">Buddhist</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <textarea class="form-control" id="address" name="address"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="hobbies" class="form-label">Hobbies :</label>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="reading">Reading</label>
+                <input class="form-check-input" type="checkbox" id="reading" name="hobbies" value="reading">
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="sports">Sports</label>
+                <input class="form-check-input" type="checkbox" id="sports" name="hobbies" value="sports">
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="traveling">Traveling</label>
+                <input class="form-check-input" type="checkbox" id="traveling" name="hobbies" value="traveling">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
 </div>
 
 <script>
@@ -144,85 +189,270 @@
   }
 </script>
 
+ <!-- footer-->
+ <!-- footer -->
+ <!-- footer -->
+ 
+    <footer class="bagian2 text-black ">
+                   
+           <!-- Left -->
+           <div class="bagain3 d-flex p-3 gap-3">
+            <div>
+              <h3>Ikuti Kami</h3>
+            </div>
+            <!-- Right -->
+            <div>
+              <a href="#" class="icon-link text-white me-4">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="icon-link text-white me-4">
+                <i class="fab fa-instagram" ></i>
+              </a>
+              <a href="#" class="icon-link text-white me-4">
+                <i class="fab fa-youtube" ></i>
+              </a>
+              <a href="#" class="icon-link text-white me-4">
+                <i class="fab fa-facebook" ></i>
+              </a>
+              <a href="#" class="icon-link text-white me-4">
+                <i class="fab fa-linkedin" ></i>
+              </a>
+            </div>
+          </div>
+          
   
-<footer>
-  <div class="bagian1">
-  <div class="column1">
-      <h3>UNTUK DEVELOPER</h3>
-      <a href="#">Referensi Developer</a>
-      <a href="#">Android Studio dan SDK</a>
-      <a href="#">Project Open Source Android</a>
-      
-  </div>
-  <div class="column1">
-      <h3>UNTUK DEVELOPER</h3>
-      <a href="#">Ringkasan Perusahaan</a>
-      <a href="#">Pengelolaan</a>
-      <a href="#">Keamanan</a>
-      <a href="#">Pendaftaran</a>
-      <a href="#">Karyawan</a>
-      <a href="#">Direkomendasikan</a>
-      <a href="#">Perangkat Perusahaan</a>
-      <a href="#">Referensi</a>
-      <a href="#">Untuk Partner</a>
-      <a href="#">Direktori Solusi</a>
-  </div>
-  <div class="column1">
-      <h3>UNTUK DEVELOPER</h3>
-      <a href="#">Blog Android</a>
-      <a href="#">Enterprise Blog</a>
-      <a href="#">Press Corner</a>
-      <a href="#">Android untuk semuanya</a>
-      <a href="#">Hubungi Tim Pers</a>
-      <a href="#">Cara kerja Google Play</a>
-  </div>
-  <div class="column1">
-      <h3>UNTUK DEVELOPER</h3>
-      <a href="#">Android Auto</a>
-      <a href="#">Android TV</a>
-      <a href="#">Wear OS by Google</a>
-  </div>
-  <div class="column1">
-      <h3>UNTUK DEVELOPER</h3>
-      <a href="#">Pindah dari iOS</a>
-      <a href="#">Pusat Bantuan Android</a>
-      <a href="#">Android File Transfer</a>
-      <a href="#">Temukan Perangkat Saya</a>
-      <a href="#">Bergabung dengan Studi Pengguna</a>
-  </div>
-</div>
+  
 
-<div class="bagian2">
-  <div class="keterangan1">
-    <div class="keterangan2">
-      <div class="keterangan3">
-    <a href="#">Kebijakan Privasi</a>
-      <div class="language-dropdown">
-        <select>
-          <option value="bahasa1">Bahasa 1</option>
-          <option value="bahasa2">Bahasa 2</option>
-          <option value="bahasa3">Bahasa 3</option>
-        </select>
-      </div>
-    </div>
-      <p>Beberapa fitur dan perangkat mungkin tidak tersedia di negara tertentu. Tergantung ketersediaan.</p>
-    <p>Beberapa fitur dan ketersediaan dapat berbeda menurut OEM dan/atau produsen perangkat.</p>
-      </div>
-  </div>
+
+            <hr class="my-4">
+
+            
+
+
+
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-0">
+          <!-- Grid row -->
+          <div class="row mt-0">
+      
+            <!-- Grid column -->
+            <div class="bagian1 col-md-3" >
+              <!-- Links -->
+              <h3 class="fw-bold">Privasi & Keamanan</h3>
+              <div class="mb-4 mt-0 d-inline-block mx-auto" style="padding-top: 25px;">
+                <p>
+                  <a href="#" >Keamanan</a>
+                </p>
+                <p>
+                  <a href="#" >Privasi </a>
+                </p>
+                <p>
+                  <a href="#" >Keselamatan Diri</a>
+                </p>
+              </div>
+            </div>
+            <!-- Grid column -->
+            
+            <!-- Grid column -->
+            <div class="bagian1 col-md-3">
+              <!-- Links -->
+              <h3 class="fw-bold">Aksesibilitas</h3>
+              <div class="mb-4 mt-0 d-inline-block mx-auto" style="padding-top: 25px;">
+                <p>
+                  <a href="#" >Fitur visual</a>
+                </p>
+                <p>
+                  <a href="#" >Fitur audio</a>
+                </p>
+                <p>
+                  <a href="#" >Fitur mobilitas</a>
+                </p>
+              </div>
+            </div>
+            <!-- Grid column -->
+            
+            <!-- Grid column -->
+            <div class="bagian1 col-md-3">
+              <!-- Links -->
+              <h3 class="fw-bold">Lainnya dari Android </h3>
+              <div class="mb-4 mt-0 d-inline-block mx-auto" style="padding-top: 25px;">
+                <p>
+                  <a href="#" >Android TV</a>
+                </p>
+                <p>
+                  <a href="#" >Layanan Seluler</a>
+                </p>
+              </div>
+            </div>
+            <!-- Grid column -->
+            
+            <!-- Grid column -->
+            <div class="bagian1 col-md-3" >
+              <!-- Links -->
+              <h3 class="fw-bold">
+                Dukungan</h3>
+              <div class="mb-4 mt-0 d-inline-block mx-auto" style="padding-top: 25px;">
+                <p>
+                  <a href="#" >Pusat Bantuan</a>
+                </p>
+                <p>
+                  <a href="#" >Transfer file</a>
+                </p>
+                <p>
+                  <a href="#" >Temukan perangkat saya</a>
+                </p>
+                <p>
+                  <a href="#" >Bergabung dengan studi pengguna</a>
+                </p>
+              </div>
+            </div>
+            <!-- Grid column -->
+            
+            <!-- Grid column -->
+            <div class="bagian1 col-md-3">
+              <!-- Links -->
+              <h3 class="fw-bold">Untuk Enterprise</h3>
+              <div class="mb-4 mt-0 d-inline-block mx-auto" style="padding-top: 25px;">
+                <p>
+                  <a href="#" > Ringkasan</a>
+                </p>
+                <p>
+                  <a href="#" > Temukan solusi</a>
+                </p>
+                <p>
+                  <a href="#" >Perangkat Enterprise</a>
+                </p>
+                <p>
+                  <a href="#" >Dukungan Enterprise</a>
+                </p>
+                <p>
+                  <a href="#" >Blog Enterprise</a>
+                </p>
+              </div>
+            </div>
+            <!-- Grid column -->
+            
+            <!-- Grid column -->
+            <div class="bagian1 col-md-3" >
+              <!-- Links -->
+              <h3 class="fw-bold">Untuk pers</h3>
+              <div class="mb-4 mt-0 d-inline-block mx-auto" style="padding-top: 25px;">
+                <p>
+                  <a href="#" >Blog Android</a>
+                </p>
+                <p>
+                  <a href="#" >Press Corner</a>
+                </p>
+                <p>
+                  <a href="#" >Hubungi tim Pers</a>
+                </p>
+              </div>
+            </div>
+            <!-- Grid column -->
+            
+            <!-- Grid column -->
+            <div class="bagian1 col-md-3" >
+              <!-- Links -->
+              <h3 class="fw-bold">Untuk developer</h3>
+              <div class="mb-4 mt-0 d-inline-block mx-auto" style="padding-top: 25px;">
+                <p>
+                  <a href="#" >
+                    Referensi untuk Developer</a>
+                </p>
+                <p>
+                  <a href="#" >
+                    Android Studio dan SDK</a>
+                </p>
+                <p>
+                  <a href="#" >
+                    Project Open Source Android</a>
+                </p>
+                <p>
+                  <a href="#" >
+                    Cara kerja Google Play</a>
+                </p>
+              </div>
+            </div>
+            <!-- Grid column -->
+  
+            
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+      
+  
+
+
+
+                <hr class="my-4">
+                
+
+
+
+
+
+                <footer">
+                    <!-- Grid container -->
+                    <div class="container-fluid " style="padding: 0;">
+                      <!--Grid row-->
+                      <div class="row">
+                        <!--Grid column-->
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                
+                          <div class="row-md-3" >
+                            <p>Beberapa fitur dan perangkat mungkin tidak tersedia di negara tertentu. Tergantung ketersediaan.</p>
+                        </div>
+                        <div class="row-md-3">
+                            <p>Beberapa fitur dan ketersediaan dapat berbeda menurut OEM dan/atau produsen perangkat.</p>
+                        </div>
+                        </div>
+                        <!--Grid column-->
+                
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="width: 174px; ">
+                          <a>Kebijakan Privasi</a>
+            
+                        </div>
+                        <!--Grid column-->
+                
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                          <div class="language-selector" style="border-bottom: 0.1px solid #cdcaca;">
+                              <img src="images/klipartz.com.png" alt="Globe" class="globe-icon">
+                              <select class="form-select custom-select " aria-label="Pilih Bahasa">
+                                  <option selected>Pilih Bahasa</option>
+                                  <option value="id">Bahasa Indonesia</option>
+                                  <option value="en">English</option>
+                                  <option value="es">Español</option>
+                                  <!-- Tambahkan opsi bahasa lainnya sesuai kebutuhan -->
+                              </select>
+                          </div>
+                      </div>
+            
+            
+                        <!--Grid column-->
+                      </div>
+                      <!--Grid row-->
+                    </div>
+                    <!-- Grid container -->
+                
+                    <!-- Copyright -->
+                    <div class="row">
+                      <div class="text-center text-uppercase" >
+                          <img src="images/unnamed.png" style="width: 84px;">
+                      </div>
+                  </div>
+    </footer>
+
+ <!-- footer -->
+ <!-- footer -->
+ <!-- footer -->
  
 
-  
 
-  <div class="social-media">
-    <a href="#" class="social-icon"><img src="images/ig.png" alt="Instagram"></a>
-    <a href="#" class="social-icon"><img src="images/fb.png" alt="Facebook"></a>
-    <a href="#" class="social-icon"><img src="images/twt.png" alt="Twitter"></a>
-    <a href="#" class="social-icon"><img src="images/in.png" alt="LinkedIn"></a>
-    <a href="#" class="social-icon"><img src="images/yt.png" alt="YouTube"></a>
-  </div>
- </div>
-</footer>
-
-
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://kit.fontawesome.com/your-own-fontawesome-kit-code.js" crossorigin="anonymous"></script>
 </body>
 </html>

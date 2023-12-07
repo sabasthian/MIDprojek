@@ -1,59 +1,97 @@
-body {
-  background-image: url('images/unai-.jpg');
-  background-size: cover; /* Atur gambar agar menutupi seluruh latar belakang */
-  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
-  background-attachment: fixed; /* Membuat gambar latar belakang tetap dalam posisi saat menggulir */
+*{
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  background: linear-gradient(to bottom, #444444, #ffffff);
+  color: #000000;
+}
+/* navbar */
+/* navbar */
+/* navbar */
+
+
+
+.navbar-nav{
+  color: black;
+  text-decoration: none;
 }
 
-.navbar {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 40px 10px 40px;
+.navbar-brand img{
+  width: 150px;
 }
 
-.logo {
-    width: 100px;
-    margin-left: 55px;
+.btn-dark:hover {
+  background-color: white;
+  color: black;
 }
 
-.cari{
-    margin-right: 55px;
-    height: 20px;
+.navbar-nav .nav-link {
+  color: #000; /* Warna teks hitam */
+  position: relative;
 }
 
-.nav-links {
-    display: flex;
-    gap: 50px;
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #000; /* Warna garis hitam */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all  ease-in-out;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    transition: color 0.3s;
+.navbar-nav .nav-link:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
 }
 
-.nav-links a:hover {
-    color: green;
+ /* Custom styles for centering and positioning */
+ .navbar {
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
+.nav-link{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-collapse {
+  justify-content: space-between;
+}
+
+.btn1 a{
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 80px 20px 5px;
+}
+
+  
+/* navbar */
+/* navbar */
+/* navbar */
 
 
-body {
+
+
+
+.game {
     text-align: center;
     font-family: Arial, sans-serif;
     margin: 50px;
 }
 
-h1 {
+.game h1 {
     color: #007BFF;
 }
 
@@ -81,138 +119,106 @@ input[type="text"] {
     margin-top: 20px;
 }
 
-/* bagian 88888 */
-/* bagian 88888 */
-/* bagian 88888 */
 
-/* atas */
-/* atas */
-/* atas */
 
-/* CSS untuk footer dan kolom-kolomnya */
-/* CSS untuk footer dan kolom-kolomnya */
+
+
+
+/* footer */
+/* footer */
+/* footer */
+  
+/* 
+/* Your existing CSS for the footer */
 footer {
-    background-color: #fff; /* Latar belakang putih */
-    padding: 20px 0 0 0 ;
-    justify-content: space-between;
-    align-items: center;
-    margin: 100px 70px 0 70px;
-  }
+  background-color: #f1f3f4;
+  padding: 60px 40px 0 40px ;
+}
+
+.bagain3 a, .bagain3 i {
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  text-decoration: none;
+}
+
+
+.icon-link i {
+  font-size: 25px; 
+  color: black; /* Initial color (black) */
+  transition: color 0.3s; /* Add a smooth transition effect */
+}
+
+.icon-link:hover i {
+  color: #808080; /* Hover color (gray) */
+}
+
+
+
+.language-selector {
+  position: relative;
+  display: inline-block;
   
-  .bagian1{
-    display: flex;
-  }
-  
-  .column1 {
-    flex: 1;
-    text-align: left; /* Membuat teks menjadi rata kiri */
-    position: relative;
-    padding: 10px;
-    font-size: 16px;
-    text-decoration: none solid rgb(64, 64, 64);
-    border-bottom: 0.2px solid black;
-  }
-  
-  .column1 h3 {
-    margin: 0;
-    position: relative;
-    padding-bottom: 20px;
-    height: 29px;
-    color: #073042;
-  }
-  
-  .column1 h3::after {
-    content: "";
-    display: flex;
-    width: 100%;
-    height: 0.2px; /* Garis tipis di bawah judul */
-    background-color: #000; /* Warna garis */
-    bottom: 0;
-    left: 0;
-  }
-  
-  .column1 a {
-    color: #073042; /* Warna teks awal (hitam) */
-    text-decoration: none;
-    transition: color 0.3s; /* Animasi perubahan warna teks saat hover */
-    display: block;
-    margin-bottom: 20px; /* Jarak antara tautan */
-  }
-  
-  .column1 a:hover {
-    color: #00cc99; /* Warna teks saat hover (hijau pastel) */
-  }
-  
-  
-  /* bawah */
-  /* bawah */
-  /* bawah */
-  
-  /* CSS untuk footer dan kolom-kolomnya */
-  /* ... (CSS sebelumnya) ... */
-  footer{
-    padding: 0;
-    margin:  0;
-  }
-  
-  .bagian2 {
-    display: flex;
-    height: 150px; 
-    width: 1103px;
-  }
-  
-  .keterangan1{
-  height: 93px;
-  width: 863px;
-  }
-  
-  .keterangan2{
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 0; /* Margin atas dan bawah untuk bagian 2 */
-    margin-left: 20px;
-  }
-  .keterangan2 p{
-    font-size: 12px;
-  }
-  
-  .keterangan3{
-    margin-left: ;
-    display: flex;
-  }
-  
-  .keterangan3 a {
-    margin-right: 20px;
-    color: #073042; /* Warna teks awal (hitam) */
-    text-decoration: none;
-    transition: color 0.3s; /* Animasi perubahan warna teks saat hover */
-  }
-  
-  .keterangan3 a:hover {
-    color: #00cc99; /* Warna teks saat hover (hijau toska) */
-  }
-  
-  
-  .language-dropdown {
-    margin-right: 20px; /* Jarak antara pilihan bahasa dan paragraf */
-  }
-  
-  .bagian2 p {
-    margin: 0; /* Menghilangkan margin default untuk paragraf */
-    margin-top: 10px; /* Jarak antara dua paragraf */
-  }
-  
-  .social-media {
-    align-items: center;
-    margin-top: 20px; /* Margin atas untuk bagian media sosial */
-  }
-  
-  .social-icon {
-    margin-right: 10px; /* Jarak antara ikon media sosial */
-  }
-  
-  .social-icon img{
-    height: 28px;
-    width: 28px;
-  }
-  
+}
+
+.globe-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+}
+
+.custom-select {
+  padding-left: 25px;
+  padding-right: 100px;
+  border: none;
+  appearance: none;
+ padding-top: 0;
+}
+
+.form-select{
+background-color: #f1f3f4 ;
+}
+
+.custom-select:focus {
+  box-shadow: none;
+}
+
+.custom-select::-ms-expand {
+  transform: rotate(0deg);
+}
+
+.custom-select option {
+  color: black;
+}
+
+.dropup .custom-select {
+  margin-bottom: 0;
+}
+
+.bagian1{
+margin-top: 4px;
+}
+
+.bagian1{
+  padding: 20px 105px 20px 0;
+}
+.bagian2 h3{
+  font-size: 16px;
+}
+.bagian1 a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #5f6368;
+  transition: color 0.3s; /* Optional: Add a smooth transition effect */
+}
+
+.bagian1 a:hover {
+  color: #000; /* Change to the desired hover color (black in this case) */
+} 
+
+/* footer */
+/* footer */
+/* footer */
+
+
