@@ -1,0 +1,176 @@
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: proxima-nova,sans-serif; 
+    overflow-x: hidden;
+  } 
+  
+  
+  .navbar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+  }
+  
+  .logo {
+    width: 150px;
+    margin-left: 100px; /* Mengurangi jarak margin kiri */
+    margin-right: 100px;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center; /* Pusatkan vertikal */
+    flex: 1; /* Biarkan menu mengisi ruang tersedia */
+    justify-content: center; /* Pusatkan horizontal */
+    margin-right: 50px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white; /* Warna teks awal */
+    font-weight: bold;
+    transition: color 0.3s;
+   
+  }
+  .tulisan a {
+    margin-right: 20px;
+  }
+  .nav-links a:hover {
+    color: red; /* Warna saat disentuh */
+  }
+  .tulisan{
+    margin-right: 50px;
+  }
+  .icon-m {
+    display: flex;
+    align-items: center; /* Pusatkan vertikal */
+    gap: 20px; /* Jarak antara ikon */
+  }
+  
+  .icon {
+    width: 15px; /* Atur lebar ikon */
+    height: 15px; /* Atur tinggi ikon */
+  }
+
+  /*navbar*/
+
+  /*bio*/
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(Image/Banner_Zhee_Border.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .biodata-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background: rgba(101, 21, 4, 0.724);
+  }
+  
+  .profile-pic {
+    margin-right: 20px;
+  }
+  
+  .profile-pic img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .biodata h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+  }
+  
+  .biodata p {
+    margin: 0;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  /*audio*/
+  button {
+    height: 17px;
+    width: 17px;
+    padding-right: 10px;
+  
+  }
+  .tombol {
+    display: inline-block;
+    vertical-align: middle;
+  }
+   /*porto*/
+  
+   /* Portfolio styles */
+  
+  .portfolio {
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background: rgba(101, 21, 4, 0.724);
+    
+  }
+  
+  .portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .portfolio-item {
+    flex: 0 0 calc(50% - 10px); /* Adjust the width as needed and consider margins */
+    margin: 5px;
+    align-items: center; /* Vertically center the items */
+  }
+  
+  
+  .portfolio-item img {
+    max-width: 100%;
+  
+  }
+   
+  h1 {
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 70px;
+  }
+  h2 { 
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    background: rgba(101, 21, 4, 0.724);
+    padding: 0;
+    margin: 0;
+  }
+
+  h3 { 
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    font-size: 30px;
+    background: rgba(101, 21, 4, 0.724);
+    padding: 0;
+    margin: 0;
+  }

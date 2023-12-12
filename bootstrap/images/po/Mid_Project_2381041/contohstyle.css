@@ -1,0 +1,97 @@
+<style>
+  @font-face { 
+    font-family: "proxima-nova";
+    src: url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/l?primer=e6066692ab328d1a92bb155659ed6609b693e1e352f0e8982e4224719b13bdfb&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/d?primer=e6066692ab328d1a92bb155659ed6609b693e1e352f0e8982e4224719b13bdfb&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/a?primer=e6066692ab328d1a92bb155659ed6609b693e1e352f0e8982e4224719b13bdfb&fvd=n7&v=3") format("opentype");
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: proxima-nova, sans-serif;
+    overflow-x: hidden;
+    background-image: url('Image/Cleno.png'); /* Adjust the path to your image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .navbar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+  }
+
+  .logo {
+    width: 150px;
+    margin-left: 100px; /* Mengurangi jarak margin kiri */
+    margin-right: 100px;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center; /* Pusatkan vertikal */
+    flex: 1; /* Biarkan menu mengisi ruang tersedia */
+    justify-content: center; /* Pusatkan horizontal */
+    margin-right: 50px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: white; /* Warna teks awal */
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .tulisan a {
+    margin-right: 20px;
+  }
+
+  .nav-links a:hover {
+    color: red; /* Warna saat disentuh */
+  }
+
+  .tulisan {
+    margin-right: 50px;
+  }
+
+  .icon-m {
+    display: flex;
+    align-items: center; /* Pusatkan vertikal */
+    gap: 20px; /* Jarak antara ikon */
+  }
+
+  .icon {
+    width: 15px; /* Atur lebar ikon */
+    height: 15px; /* Atur tinggi ikon */
+  }
+
+  /* Unique CSS for the video and text */
+  video {
+    width: 900px;
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Make sure it's a block element for margin: 0 auto; to work */
+    border-style: dashed;
+    border: solid 5px #fff;
+    border-radius: 20px;
+    margin-top: 80px;
+  }
+  
+
+  h1 {
+    -webkit-text-stroke: 1.5px #430303;
+    color: #fff; 
+    text-align: center; /* Center-align the text */
+    font-size: 35px; /* Adjust the font size as needed */
+    font-weight: 800;
+  }
+  h2 {
+    -webkit-text-stroke: 1px #430303;
+    color: #fff; 
+    text-align: center; /* Center-align the text */
+    font-size: 20px; /* Adjust the font size as needed */
+    font-weight: 800;
+  }
